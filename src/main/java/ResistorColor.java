@@ -1,9 +1,14 @@
+import java.util.List;
+
 class ResistorColor {
+    final List<String> COLORS = List.of(
+            "black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white");
+
     int colorCode(String color) {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return COLORS.indexOf(color);
     }
 
     String[] colors() {
-        throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+        return COLORS.toArray(new String[0]);
     }
 }
